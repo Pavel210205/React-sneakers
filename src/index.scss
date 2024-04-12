@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  /*стандартый размер текста у браузеров 16 */
+  font-size: 16px;
+  line-height: 120%;
+  background: #e7f6ff;
+  color: black;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 106%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  min-height: 100vh;
+  padding: 0 15px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+  border-radius: 1.25rem;
+  margin: 85px auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --color-grey: #bdbdbd;
+  --main-color: black;
+}
+
+
+
+.content {
+  &__top {
+    display: flex;
+    margin-top: 39px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px -20px;
+    padding: 0 20px;
+  }
+}
+
+
+.search {
+  position: relative;
+  border: 1px solid #f3f3f3;
+  border-radius: 0.62rem;
+  max-width: 15.62rem;
+  height: 2.81rem;
+  padding: 13px 46px 15px 46px;
+  overflow: hidden;
+
+  &__input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 0.88rem;
+    color: #c4c4c4;
+    display: block;
+    width: 100%;
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 0.88rem;
+      color: #c4c4c4;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    cursor: pointer;
+  }
+}
+
+.searchRemove {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
